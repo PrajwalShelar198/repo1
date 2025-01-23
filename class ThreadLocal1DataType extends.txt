@@ -1,0 +1,26 @@
+class ThreadLocal1<DataType> extends Thread{
+	Object container;
+	
+	public void set(DataType data){
+		container = data;
+	}
+}
+
+
+public class M1 extends Thread{
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+class TLnew<dataType> extends Thread{
+	Object container;
+	
+	public void set(dataType obj){
+		container = obj;
+	}
+	public dataType get() {
+		return (dataType) container; 
+	}
+}
